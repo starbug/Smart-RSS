@@ -178,10 +178,11 @@ define(['backbone', 'modules/RSSParser', 'modules/Animation', 'favicon', 'models
 
 
         displaySystemNotification() {
-            chrome.notifications.create({
+            chrome.notifications.create(undefined, {
                 type: 'basic',
                 title: 'Smart RSS',
-                message: 'New articles found'
+                message: 'New articles found',
+                iconUrl: 'images/icon16.png',
             });
         }
 
