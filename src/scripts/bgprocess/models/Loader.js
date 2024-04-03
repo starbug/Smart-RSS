@@ -183,6 +183,7 @@ define(['backbone', 'modules/RSSParser', 'modules/Animation', 'favicon', 'models
                 title: 'Smart RSS',
                 message: 'New articles found',
                 iconUrl: 'images/icon16.png',
+                requireInteraction: true,
             });
         }
 
